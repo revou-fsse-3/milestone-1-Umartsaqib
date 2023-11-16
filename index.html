@@ -12,15 +12,15 @@
 <!-- navigation -->
   <nav class="navbar">
     <div class="nav-logo">
-      <img src="assets/study_logo.png" alt="company logo" width="200px" height="100px"> 
+      <img src="assets/study_logo.png" alt="company logo" width="150px" height="100px"> 
       <h1>Study</h1>
     </div>
 
     <div class="navbar2">
-      <ul class="nav-menu">
+      <ul class="nav-menu" id="mytopnav">
         <!-- <button id="night-mode-button" class="nmbutton">Night Mode</button> -->
         <li>
-          <a href="">Home</a>
+          <a href="" class="active">Home</a>
         </li>
         <li>
           <a href="#about">About</a>
@@ -31,6 +31,11 @@
         <li>
           <a href="#teacher">Teacher</a>
         </li>
+        <li>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+      </li>
       </ul>
     </div>
   </nav>
