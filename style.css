@@ -1,0 +1,370 @@
+@font-face {
+  font-family:'firasans';
+  src: url(fonts/FiraSans-Regular.ttf);
+}
+
+@font-face {
+  font-family:'firasans bold';
+  src: url(fonts/FiraSans-Bold.ttf);
+}
+
+/* .night-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.night-mode > nav {
+  background-color: #333;
+  color: #0a0a0a;
+}
+
+.nmbutton{
+  border-radius: 15px;
+} */
+
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-logo{
+  display: flex;
+  align-items: center;
+}
+
+.navbar2{
+  display: flex;
+}
+
+li a {
+  color: #000;
+  paddingrgb(14, 14, 14)x 16px;
+  text-decoration: none;
+}
+
+.nav-menu{
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.info{
+  background-image: url(https://wallpapercave.com/wp/wp7182018.jpg);
+  width: 100%;
+  background-size: cover;
+  padding-bottom: 10%; 
+}
+
+.text > h2{
+  font-family: 'firasans bold';
+ font-size: 4vw;
+  text-shadow: 4px 4px #141414;
+  animation-name: popup;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes popup{
+  from {top: 0px;}
+  from {right: 1200px;}
+ 
+ }
+.text{
+  font-family: 'firasans';
+  display: flex;
+  flex-direction: column;
+  color: white;
+  display: flex;
+  position: relative;
+  width: 300px;
+  min-height: 1px;
+  padding-top: 5%;
+  padding-left: 20%;
+}
+
+.button{
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  color: black;
+  border: 2px solid #0497aa; 
+  background-color: white; 
+  border-color: #0497aa;
+  border-radius: 15px;
+}
+
+.button:hover {background-color: #0497aa}
+
+.button:active {
+  background-color: #0497aa;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+/* about study */
+
+.about{
+  padding-top: 10px;
+  background-color: #f0f0f0;
+}
+
+.text-about{
+  font-family: 'firasans bold';
+  display: flex;
+  justify-content: center;
+}
+
+.row{
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.about-1{
+  display: flex;
+  gap: 3rem;
+  padding: 15px;
+}
+
+.about-2{
+  display: flex;
+  gap: 3rem;
+  padding: 15px;
+}
+
+.about-3{
+  display: flex;
+  gap: 3rem;
+  padding: 15px;
+}
+
+.about-4{
+  display: flex;
+  gap: 3rem;
+  padding: 15px;
+}
+
+
+.icon-button{
+  border-radius: 50%;
+  min-width: 65px;
+  height: 65px;
+  line-height: 65px;
+  text-align: center;
+  background-color: white;
+}
+.about-text{
+  width: 450px;
+}
+
+.about-text > h3{
+  font-family: 'firasans bold';
+}
+
+.about-text > p{
+  font-family: 'firasans';
+}
+
+.program-title{
+  font-family: 'firasans bold';
+  display: flex;
+  justify-content: center;
+}
+
+.program-list{
+  display: grid;
+  padding: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 250px 250px;  
+  grid-gap: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10px;
+}
+
+.gallery{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 400px;
+  filter: grayscale(100%);
+  transition-property: filter;
+  transition-duration: 2s;
+}
+
+.gallery:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  filter: grayscale(0);
+}
+
+.gallery img{
+  width: 100%;
+  height: auto;
+}
+
+.desc{
+  padding: 15px;
+}
+
+.desc > h3{
+  font-family: 'firasans bold';
+}
+.desc > p{
+  font-family: 'firasans';
+}
+
+#one{
+  grid-column: 1;
+  grid-row: 1 /span 3;
+}
+#two{
+  grid-column: 2;
+  grid-row: 1 /span 2;
+}
+#three{
+  grid-column: 3;
+  grid-row: 1 /span 3;
+}
+#four{
+  grid-column: 1;
+  grid-row: 4 /span 2;
+}
+#five{
+  grid-column: 2;
+  grid-row: 4 /span 3;
+}
+#six{
+  grid-column: 3;
+  grid-row: 4 /span 2;
+}
+.teacher{
+  background-color: #f0f0f0;
+}
+.para-pengajar{
+  font-family: 'firasans bold';
+  display: flex;
+  justify-content: center;
+}
+
+.teacher-list > h4{
+  font-family: 'firasans bold';
+}
+
+.teacher-list > p{
+  font-family: 'firasans';
+}
+
+.row-teacher1{
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+}
+.row-teacher2{
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.teacher-list{
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+  align-items: center;
+}
+.teacher-img > img{
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid #0a0a0a;
+}
+
+/* responsive */
+/* dekstop */
+@media only screen and (min-width: 780px){
+
+  .program{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* .program-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  } */
+
+  .row-teacher1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .row-teacher2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+}/* tablet */
+@media only screen and (max-width: 768px){
+
+  .program-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .row-teacher1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .row-teacher2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+.navbar{
+display: flex;
+flex-direction: column;
+}
+.text{
+  display: flex;
+  align-items: flex-start;
+}
+
+.program-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row-teacher1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row-teacher2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10%;
+}
+}
