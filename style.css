@@ -357,6 +357,87 @@ a {
   }
 }
 
+@media only screen and (max-width: 600px){
+  body{
+    margin: 0px;
+    padding: 0px;
+  }
+  .navbar{
+  display: flex;
+  flex-direction: column;
+  
+  }
+  
+  .nav-logo{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .text{
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .button{
+    width: 190px;
+    font-size: 20px;
+  }
+  
+  .about-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .about-text > p{
+    width: 380px;
+  }
+  .about{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .about-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .program-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .row-teacher1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .row-teacher2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10%;
+  }
+  }
+  
 @media only screen and (max-width: 425px){
 body{
   margin: 0px;
