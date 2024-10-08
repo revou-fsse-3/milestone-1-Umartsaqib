@@ -8,106 +8,148 @@
   src: url(fonts/FiraSans-Bold.ttf);
 }
 
-/* .night-mode {
-  background-color: #333;
-  color: #fff;
-}
-
-.night-mode > nav {
-  background-color: #333;
-  color: #0a0a0a;
-}
-
-.nmbutton{
-  border-radius: 15px;
-} */
 body{
  padding: 0px;
  margin: 0px;
 }
 
-.navbar{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.nav-logo{
+.nav-logo {
   display: flex;
   align-items: center;
 }
 
-.navbar2{
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  margin: 2px;
-  gap: 2rem;
+.nav-logo a{
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-a {
-  color: #000;
-  paddingrgb(14, 14, 14)x 16px;
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 0 10 0 10px;
+  position: fixed;
+  top: 0; 
+  z-index: 1000;
+  width: 100%;
+}
+
+.nav-menu a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
+  font-size: 17px;
 }
 
-.navbar2 .icon {
+.nav-menu a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav-menu a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.nav-menu .icon {
   display: none;
 }
 
-.info{
-  background-image: url(https://wallpapercave.com/wp/wp7182018.jpg);
-  width: 100%;
-  background-size: cover;
-  padding-bottom: 10%; 
+@media screen and (max-width: 600px) {
+  .nav-menu a {
+    display: none;
+  }
+  .nav-menu a.icon {
+    display: block;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
 }
 
-
-.text > h2{
-  font-family: 'firasans bold';
- font-size: 4vw;
-  text-shadow: 4px 4px #141414;
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    flex-direction: column;
+  }
+  .topnav .nav-logo{
+    flex-direction: row;
+    }
+  .topnav.responsive .nav-menu {
+    flex-direction: column;
+    width: 100%;
+  }
+  .topnav.responsive a {
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .icon {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
 }
 
-
-.text{
-  font-family: 'firasans';
-  display: flex;
-  flex-direction: column;
-  color: white;
-  display: flex;
+.info {
   position: relative;
-  width: 300px;
-  min-height: 1px;
-  padding-top: 5%;
-  padding-left: 20%;
+  background-image: url('https://wallpapercave.com/wp/wp7182018.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
 }
 
-.button{
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.text {
+  position: relative;
+  z-index: 2; 
+  font-family: 'firasans';
+  color: white;
+  padding: 120px;
+}
+
+.text > h2 {
+  font-family: 'firasans bold';
+  font-size: 4vw;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); 
+}
+
+.text a {
+  text-decoration: none;
   display: inline-block;
   padding: 15px 25px;
   font-size: 24px;
   cursor: pointer;
   text-align: center;
   color: black;
-  border: 2px solid #0497aa; 
-  background-color: white; 
-  border-color: #0497aa;
+  border: 2px solid #0497aa;
+  background-color: white;
   border-radius: 15px;
 }
 
-.button:hover {background-color: #0497aa}
+.text a:hover {
+  background-color: #0497aa;
+}
 
-.button:active {
+.text a:active {
   background-color: #0497aa;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-/* about study */
 
 .about{
-  padding-top: 10px;
-  background-color: #f0f0f0;
+  padding-top: 20px;
+  background-color: #FBFBFB;
 }
 
 .text-about{
@@ -173,6 +215,8 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .program-title{
@@ -254,7 +298,9 @@ a {
 } */
 
 .teacher{
-  background-color: #f0f0f0;
+  background-color: #FBFBFB;
+  padding-top: 15px;
+  padding-bottom: 20px;
 }
 .para-pengajar{
   font-family: 'firasans bold';
@@ -298,7 +344,7 @@ a {
 .footer{
   display: flex;
   justify-content: center;
-  border-top: 2px solid #0a0a0a;
+  border-top: 1px solid #0a0a0a;
 }
 
 /* responsive */
@@ -313,10 +359,6 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  .program-list{
-  
   }
 
   .row-teacher1{
@@ -362,27 +404,19 @@ a {
     margin: 0px;
     padding: 0px;
   }
-  .navbar{
-  display: flex;
-  flex-direction: column;
-  
-  }
-  
-  .nav-logo{
-    display: flex;
-    flex-direction: column;
-  }
-  
+
   .text{
-    display: flex;
-    align-items: flex-start;
+    padding: 20px;
+    margin-top: 20px;
   }
-  
-  .button{
-    width: 190px;
-    font-size: 20px;
+  .text a{
+    font-size: 15px;
   }
-  
+
+  .text h2{
+    font-size: 24px;
+  }
+
   .about-text{
     display: flex;
     flex-direction: column;
@@ -398,21 +432,29 @@ a {
   }
   
   .about-1{
+    width: 100%;
+    padding: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .about-2{
+    width: 100%;
+padding: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .about-3{
+    width: 100%;
+padding: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .about-4{
+    width: 100%;
+padding: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -442,26 +484,6 @@ a {
 body{
   margin: 0px;
   padding: 0px;
-}
-.navbar{
-display: flex;
-flex-direction: column;
-
-}
-
-.nav-logo{
-  display: flex;
-  flex-direction: column;
-}
-
-.text{
-  display: flex;
-  align-items: flex-start;
-}
-
-.button{
-  width: 190px;
-  font-size: 20px;
 }
 
 .about-text{

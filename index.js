@@ -26,10 +26,10 @@
 // });
 
 function myFunction() {
-  var x = document.getElementById("mytopnav");
-  if (x.className === "nav-menu") {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
     x.className += " responsive";
   } else {
-    x.className = "nav-menu";
+    x.className = "topnav";
   }
 }
